@@ -1,0 +1,317 @@
+export interface GlossaryEntry {
+  id: string;
+  term: string;
+  definition: string;
+  part: 1 | 2;
+}
+
+export const GLOSSARY_ENTRIES: GlossaryEntry[] = [
+  // Parte 1
+  {
+    id: 'accidente-de-placa',
+    term: 'Accidente de placa',
+    definition: 'Rotura, fisura o erosión de la cápsula fibrosa de un ateroma coronario; expone sustancias trombogénicas e inicia la coagulación.',
+    part: 1,
+  },
+  {
+    id: 'amortiguamiento',
+    term: 'Amortiguamiento (damping)',
+    definition: 'Distorsión de la onda de presión en la línea arterial por burbujas, coágulos o tubuladuras compliantes: sub o sobreamortiguamiento.',
+    part: 1,
+  },
+  {
+    id: 'angina-inestable',
+    term: 'Angina inestable',
+    definition: 'SCA sin necrosis detectable (troponinas negativas); dolor en reposo, reciente o acelerado.',
+    part: 1,
+  },
+  {
+    id: 'calibracion-a-cero',
+    term: 'Calibración a cero',
+    definition: 'Ajuste del transductor a la presión atmosférica en el eje flebostático para fijar la referencia basal.',
+    part: 1,
+  },
+  {
+    id: 'cpap',
+    term: 'CPAP',
+    definition: 'Ventilación no invasiva con presión supraatmosférica durante todo el ciclo; mejora la oxigenación y reduce el retorno venoso.',
+    part: 1,
+  },
+  {
+    id: 'derivaciones-precordiales-derechas',
+    term: 'Derivaciones precordiales derechas (V3R–V6R)',
+    definition: 'Electrodos en el hemitórax derecho para diagnosticar isquemia del ventrículo derecho.',
+    part: 1,
+  },
+  {
+    id: 'doble-antiagregacion',
+    term: 'Doble antiagregación (DAPT)',
+    definition: 'AAS más un inhibidor P2Y12 (ticagrelor, prasugrel o clopidogrel).',
+    part: 1,
+  },
+  {
+    id: 'eje-flebostatico',
+    term: 'Eje flebostático',
+    definition: 'Cruce del 4.º EIC con la línea axilar media; representa el nivel de la aurícula izquierda.',
+    part: 1,
+  },
+  {
+    id: 'emergencia-hipertensiva',
+    term: 'Emergencia hipertensiva',
+    definition: 'PAS ≥180 o PAD ≥120 mmHg con daño agudo de órgano diana; requiere tratamiento IV inmediato en UCI.',
+    part: 1,
+  },
+  {
+    id: 'equivalente-anginoso',
+    term: 'Equivalente anginoso',
+    definition: 'Síntoma isquémico distinto al dolor torácico (disnea aguda, síncope, fatiga extrema); frecuente en mujeres, ancianos y diabéticos.',
+    part: 1,
+  },
+  {
+    id: 'formula-de-bazett',
+    term: 'Fórmula de Bazett',
+    definition: 'QTc = QT ÷ √RR; corrige el intervalo QT por la frecuencia cardíaca.',
+    part: 1,
+  },
+  {
+    id: 'hendidura-dicrota',
+    term: 'Hendidura dicrota',
+    definition: 'Muesca en la rama descendente de la curva arterial; marca el cierre de la válvula aórtica.',
+    part: 1,
+  },
+  {
+    id: 'iamsest',
+    term: 'IAMSEST',
+    definition: 'SCA con oclusión subtotal y daño miocárdico confirmado por elevación de troponinas.',
+    part: 1,
+  },
+  {
+    id: 'intervalo-pr',
+    term: 'Intervalo PR',
+    definition: 'Del inicio de la onda P al inicio del QRS; conducción auriculoventricular (0,12–0,20 s).',
+    part: 1,
+  },
+  {
+    id: 'icp-primaria',
+    term: 'ICP primaria',
+    definition: 'Recanalización urgente de la arteria ocluida por cateterismo, con stent, sin fibrinolíticos previos.',
+    part: 1,
+  },
+  {
+    id: 'linea-isoelectrica',
+    term: 'Línea isoeléctrica',
+    definition: 'Segmento TP: reposo eléctrico entre el final de la T y la siguiente P; referencia para medir el ST.',
+    part: 1,
+  },
+  {
+    id: 'nt-probnp',
+    term: 'NT-proBNP',
+    definition: 'Fracción N-terminal del propéptido natriurético B; marcador de distensión ventricular con alto valor predictivo negativo.',
+    part: 1,
+  },
+  {
+    id: 'presion-arterial-media',
+    term: 'Presión arterial media (PAM)',
+    definition: 'Presión de perfusión tisular promedio: (PAS + 2·PAD) ÷ 3.',
+    part: 1,
+  },
+  {
+    id: 'punto-j',
+    term: 'Punto J',
+    definition: 'Unión entre el final del QRS y el inicio del segmento ST.',
+    part: 1,
+  },
+  {
+    id: 'puntos-de-corte-reperfusion',
+    term: 'Puntos de corte de reperfusión',
+    definition: 'Puerta-balón ≤60 min, puerta-aguja ≤10 min, diagnóstico a ICP ≤120 min.',
+    part: 1,
+  },
+  {
+    id: 'r-sobre-t',
+    term: 'R sobre T',
+    definition: 'Estímulo o despolarización ectópica en la fase vulnerable de la T; puede inducir fibrilación ventricular.',
+    part: 1,
+  },
+  {
+    id: 'signo-de-levine',
+    term: 'Signo de Levine',
+    definition: 'El paciente señala el dolor con el puño cerrado sobre el esternón.',
+    part: 1,
+  },
+  {
+    id: 'sistema-libre-pvc',
+    term: 'Sistema libre de PVC',
+    definition: 'Equipos de polietileno o polietileno/poliuretano que evitan la adsorción de fármacos como la nitroglicerina.',
+    part: 1,
+  },
+  {
+    id: 'temblor-somatico',
+    term: 'Temblor somático',
+    definition: 'Artefacto por contracción muscular que deforma la línea base e imita taquiarritmias auriculares.',
+    part: 1,
+  },
+  {
+    id: 'test-de-allen',
+    term: 'Test de Allen',
+    definition: 'Valora la permeabilidad del arco palmar y la arteria cubital antes de canalizar la radial.',
+    part: 1,
+  },
+  {
+    id: 'test-de-la-onda-cuadrada',
+    term: 'Test de la onda cuadrada',
+    definition: 'Descarga rápida del lavado para evaluar frecuencia natural y amortiguamiento del sistema.',
+    part: 1,
+  },
+  {
+    id: 'tiempo-puerta-aguja',
+    term: 'Tiempo puerta-aguja',
+    definition: 'Del ingreso al inicio del fibrinolítico (meta ≤10 min).',
+    part: 1,
+  },
+  {
+    id: 'tiempo-puerta-balon',
+    term: 'Tiempo puerta-balón',
+    definition: 'Del ingreso a la apertura de la arteria con balón (meta ≤60 min).',
+    part: 1,
+  },
+  {
+    id: 'torsades-de-pointes',
+    term: 'Torsades de Pointes',
+    definition: 'Taquicardia ventricular polimórfica con QRS que ondula sobre la línea base; asociada a QTc prolongado.',
+    part: 1,
+  },
+  {
+    id: 'urgencia-hipertensiva',
+    term: 'Urgencia hipertensiva',
+    definition: 'PA ≥180/120 mmHg sin disfunción aguda de órganos; se trata por vía oral en 24–48 h.',
+    part: 1,
+  },
+  {
+    id: 'vci-en-pocus',
+    term: 'VCI en POCUS',
+    definition: 'Calibre y colapsabilidad de la vena cava inferior para estimar la presión de la aurícula derecha.',
+    part: 1,
+  },
+  // Parte 2
+  {
+    id: 'ablacion-con-cateter',
+    term: 'Ablación con catéter',
+    definition: 'Radiofrecuencia o crioablación que genera una lesión localizada para aislar focos ectópicos o circuitos de reentrada.',
+    part: 2,
+  },
+  {
+    id: 'balon-de-contrapulsacion',
+    term: 'Balón de contrapulsación (BCPIA)',
+    definition: 'Balón en aorta descendente: se infla en diástole (perfusión coronaria) y se desinfla en sístole (menor postcarga).',
+    part: 2,
+  },
+  {
+    id: 'cardioversion-electrica',
+    term: 'Cardioversión eléctrica (CVE)',
+    definition: 'Descarga sincronizada con la onda R para revertir taquiarritmias con pulso.',
+    part: 2,
+  },
+  {
+    id: 'circulacion-extracorporea',
+    term: 'Circulación extracorpórea (CEC)',
+    definition: 'Circuito que sustituye temporalmente la bomba cardíaca y el intercambio pulmonar en cirugía a corazón abierto.',
+    part: 2,
+  },
+  {
+    id: 'desfibrilacion',
+    term: 'Desfibrilación (DF)',
+    definition: 'Descarga bifásica asincrónica, solo en paro por FV o TV sin pulso.',
+    part: 2,
+  },
+  {
+    id: 'diseccion-aortica',
+    term: 'Disección aórtica',
+    definition: 'Desgarro de la íntima que diseca la media y crea una falsa luz paralela a la verdadera.',
+    part: 2,
+  },
+  {
+    id: 'edema-agudo-de-pulmon',
+    term: 'Edema agudo de pulmón (EAP)',
+    definition: 'Insuficiencia respiratoria por trasudado capilar alveolar masivo al subir las presiones de llenado del VI.',
+    part: 2,
+  },
+  {
+    id: 'encefalopatia-por-contraste',
+    term: 'Encefalopatía por contraste',
+    definition: 'Cuadro neurotóxico transitorio (24–72 h) tras contraste yodado.',
+    part: 2,
+  },
+  {
+    id: 'fistula-arteriovenosa',
+    term: 'Fístula arteriovenosa',
+    definition: 'Comunicación anómala arteria-vena tras punciones complejas; soplo o frémito continuo.',
+    part: 2,
+  },
+  {
+    id: 'intervencionismo-estructural',
+    term: 'Intervencionismo estructural (IE)',
+    definition: 'Corrección percutánea de defectos valvulares, septales o de cavidades (TAVI, MitraClip, COI).',
+    part: 2,
+  },
+  {
+    id: 'leak-paravalvular',
+    term: 'Leak paravalvular',
+    definition: 'Regurgitación periprotésica por aposición incompleta o calcificación anular.',
+    part: 2,
+  },
+  {
+    id: 'marcapasos-transcutaneo',
+    term: 'Marcapasos transcutáneo (MTC)',
+    definition: 'Estimulación temporal no invasiva con electrodos cutáneos de gran superficie.',
+    part: 2,
+  },
+  {
+    id: 'marcapasos-transvenoso-temporal',
+    term: 'Marcapasos transvenoso temporal (MTT)',
+    definition: 'Cable endocárdico en el VD conectado a un generador externo.',
+    part: 2,
+  },
+  {
+    id: 'pseudoaneurisma',
+    term: 'Pseudoaneurisma',
+    definition: 'Hematoma pulsátil extravascular contenido por tejidos blandos y conectado con la luz arterial.',
+    part: 2,
+  },
+  {
+    id: 'pulso-paradojico',
+    term: 'Pulso paradójico',
+    definition: 'Caída inspiratoria de la PAS >10 mmHg en ventilación espontánea; signo de taponamiento.',
+    part: 2,
+  },
+  {
+    id: 'reperfusion-miocardica',
+    term: 'Reperfusión miocárdica',
+    definition: 'Apertura urgente de la arteria del infarto (ICP o fibrinólisis) para limitar la necrosis.',
+    part: 2,
+  },
+  {
+    id: 'shock-cardiogenico',
+    term: 'Shock cardiogénico',
+    definition: 'Hipoperfusión sistémica por falla primaria del miocardio como bomba.',
+    part: 2,
+  },
+  {
+    id: 'taponamiento-cardiaco',
+    term: 'Taponamiento cardíaco',
+    definition: 'Presión pericárdica elevada que impide el llenado ventricular diastólico.',
+    part: 2,
+  },
+  {
+    id: 'triada-de-beck',
+    term: 'Tríada de Beck',
+    definition: 'Hipotensión, tonos cardíacos hipofonéticos e ingurgitación yugular.',
+    part: 2,
+  },
+  {
+    id: 'umbral-de-captura',
+    term: 'Umbral de captura',
+    definition: 'Mínima salida (mA) que despolariza el miocardio de forma constante.',
+    part: 2,
+  },
+];

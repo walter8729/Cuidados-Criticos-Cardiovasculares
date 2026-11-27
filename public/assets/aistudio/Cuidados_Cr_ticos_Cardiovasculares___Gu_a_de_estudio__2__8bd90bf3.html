@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cuidados Críticos Cardiovasculares – Guía de estudio</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fa;--fg:#17212b;--mut:#5b6773;--card:#fff;--line:#dbe2e8;--c1:#0b7a75;--c2:#b45f06;--c3:#6a3fb5;--c4:#c0262d;--t1:#e1f3f1;--t2:#fbeedb;--t3:#ece5f8;--t4:#fbe4e5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f161d;--fg:#e8eef3;--mut:#9aa8b5;--card:#17212b;--line:#2b3a47;--c1:#4fd1c5;--c2:#f6ad55;--c3:#b794f4;--c4:#fc8181;--t1:#12302f;--t2:#35260f;--t3:#251c3d;--t4:#3a1a1d}}
+:root[data-theme="dark"]{--bg:#0f161d;--fg:#e8eef3;--mut:#9aa8b5;--card:#17212b;--line:#2b3a47;--c1:#4fd1c5;--c2:#f6ad55;--c3:#b794f4;--c4:#fc8181;--t1:#12302f;--t2:#35260f;--t3:#251c3d;--t4:#3a1a1d}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 "Atkinson Hyperlegible",system-ui,sans-serif}
+main{max-width:920px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:clamp(1.7rem,5vw,2.5rem);line-height:1.15;margin:.2em 0}
+h2{font-size:1.5rem;margin:0 0 .6em}h3{font-size:1.08rem;margin:1.4em 0 .5em}
+.sub{color:var(--mut);margin:0 0 14px}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 28px}
+nav a{padding:7px 14px;border-radius:999px;color:#fff;text-decoration:none;font-weight:700;font-size:.9rem}
+nav a:nth-child(1){background:var(--c1)}nav a:nth-child(2){background:var(--c2)}nav a:nth-child(3){background:var(--c3)}nav a:nth-child(4){background:var(--c4)}
+@media (prefers-color-scheme:dark){nav a{color:#0f161d}}
+section{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--m);border-radius:12px;padding:20px 18px;margin:0 0 28px}
+#m1{--m:var(--c1);--t:var(--t1)}#m2{--m:var(--c2);--t:var(--t2)}#m3{--m:var(--c3);--t:var(--t3)}#m4{--m:var(--c4);--t:var(--t4)}
+section h2{color:var(--m)}
+.wrap{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.93rem}
+th{background:var(--m);color:#fff;text-align:left;padding:8px 10px}
+@media (prefers-color-scheme:dark){th{color:#0f161d}}
+td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--t)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:12px 0}
+.stat{background:var(--t);border-radius:10px;padding:10px;text-align:center}
+.stat b{display:block;font-size:1.35rem;color:var(--m)}.stat span{font-size:.82rem;color:var(--mut)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:10px 0}
+.box{background:var(--t);border-left:5px solid var(--m);border-radius:8px;padding:10px 12px}
+.box b{color:var(--m)}
+.case{border:2px dashed var(--m);border-radius:10px;padding:12px 14px;margin:16px 0}
+.case h3{margin-top:0;color:var(--m)}
+.pearl{background:var(--m);color:#fff;border-radius:10px;padding:12px 14px;margin:14px 0}
+@media (prefers-color-scheme:dark){.pearl{color:#0f161d}}
+.warn{background:var(--t4);border-left:5px solid var(--c4);border-radius:8px;padding:10px 12px;margin:10px 0}
+ul{padding-left:20px;margin:.4em 0}li{margin:.25em 0}
+.st{display:grid;grid-template-columns:1fr 1fr;gap:6px;max-width:640px}
+.st div{padding:12px;border-radius:8px;border:1px solid var(--line)}
+.st .h{background:var(--t1)}.st .c{background:var(--t4)}.st .l{background:var(--t2)}.st .a{background:var(--t3)}
+.bar{display:flex;align-items:center;gap:10px;margin:6px 0}.bar i{display:block;height:24px;background:var(--m);border-radius:4px}.bar span{min-width:150px;font-size:.9rem}
+svg{max-width:100%;height:auto}svg text{fill:var(--fg);font-family:inherit}
+.lg{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.lg div{flex:1 1 90px;background:var(--t);border-radius:8px;padding:8px;text-align:center;font-size:.85rem}.lg b{display:block;font-size:1.3rem;color:var(--m)}
+nav a:last-child{background:var(--mut)}
+:root{--c5:#1f5fbf;--t5:#e2ecfb;--c6:#b8326e;--t6:#fbe3ee;--c7:#2f7d32;--t7:#e3f3e4;--c8:#7a4b1f;--t8:#f1e8dd}
+@media (prefers-color-scheme:dark){:root:not([data-theme='light']){--c5:#7db2ff;--t5:#16253d;--c6:#f48fb8;--t6:#3b1a2b;--c7:#7fd685;--t7:#14301a;--c8:#e0a56b;--t8:#33261a}}
+:root[data-theme='dark']{--c5:#7db2ff;--t5:#16253d;--c6:#f48fb8;--t6:#3b1a2b;--c7:#7fd685;--t7:#14301a;--c8:#e0a56b;--t8:#33261a}
+#m5{--m:var(--c5);--t:var(--t5)}#m6{--m:var(--c6);--t:var(--t6)}#m7{--m:var(--c7);--t:var(--t7)}#m8{--m:var(--c8);--t:var(--t8)}
+.part{font-size:1.25rem;margin:34px 0 14px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+@media (prefers-color-scheme:dark){nav a:nth-child(5){color:#0f161d}}
+#glos{--m:var(--mut);--t:var(--line)}
+#glos dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin:0}
+#glos dl>div{background:var(--bg);border-left:4px solid var(--mut);border-radius:6px;padding:8px 12px}
+#glos dt{font-weight:700}#glos dd{margin:2px 0 0;font-size:.92rem;color:var(--mut)}
+footer{color:var(--mut);font-size:.85rem}
+</style></head><body><main>
+<h1>Cuidados Críticos Cardiovasculares</h1>
+<p class="sub">Guía de estudio basada en las ponencias de la Dra. Alicia Carolina Madrazo Garcete · Ciclo de Kolb: concepto, simulación, observación, consolidación.</p>
+<nav><a href="#m1">I · ECG</a><a href="#m2">II · Hipertensión</a><a href="#m3">III · Insuficiencia cardíaca</a><a href="#m4">IV · Coronario agudo</a><a href='#m5' style='background:var(--c5)'>V · SCA y cirugía</a><a href='#m6' style='background:var(--c6)'>VI · Aorta y taponamiento</a><a href='#m7' style='background:var(--c7)'>VII · Arritmias</a><a href='#m8' style='background:var(--c8)'>VIII · IC y shock</a><a href="#glos">Glosario</a></nav>
+
+<h2 class='part'>Parte 1 · Manual basado exclusivamente en las Ponencias de la Dra. Alicia Carolina Madrazo Garcete</h2>
+<div class='box' style='--m:var(--c1);--t:var(--t1);margin-bottom:24px'><p style='margin:0 0 6px'>Este programa de formación avanzada aplica el <b>Ciclo de Aprendizaje Experiencial de David Kolb</b>, articulado en cuatro fases para cada competencia clínica:</p><ol>
+<li><b>Conceptualización abstracta:</b> Marco fisiopatológico, dianas terapéuticas cuantitativas y fundamentos electrofisiológicos y hemodinámicos.</li>
+<li><b>Experimentación activa y simulación clínica:</b> Casos de estudio contextualizados en unidades de cuidados intensivos cardiovasculares con toma de decisiones de enfermería.</li>
+<li><b>Observación reflexiva:</b> Vigilancia de alarmas, monitorización invasiva, curvas de presión y detección de complicaciones iatrogénicas.</li>
+<li><b>Consolidación cognitiva:</b> Puntos de anclaje nemotécnico, perlas clínicas y matrices de discriminación diagnóstica rápida.</li></ol></div>
+<section id='m1'><h2>Módulo I: Electrocardiograma Normal, Semiología y Sistemática de Lectura en UCI</h2>
+<h3>1. Fundamentos Fisiológicos, Vectores y Estandarización Técnica</h3>
+<ul><li><b>Registro del potencial de acción miocárdico:</b> El electrocardiograma (ECG) registra en superficie la sumatoria espacial y temporal de las corrientes eléctricas generadas por la despolarización y repolarización cardíaca.</li>
+<li>Un vector que se desplaza hacia un electrodo explorador inscribe una deflexión <b>positiva</b> (hacia arriba de la línea isoeléctrica).</li>
+<li>Un vector que se aleja del electrodo explorador inscribe una deflexión <b>negativa</b> (hacia abajo).</li>
+<li>Un vector que discurre en sentido perpendicular al electrodo genera un trazado <b>isodifásico</b>.</li>
+<li><i>Principio de disociación electromecánica:</i> El ECG valora exclusivamente la actividad bioeléctrica, no la contracción mecánica ni la eficacia hemodinámica del corazón.</li></ul>
+<h3>Calibración milimétrica estándar</h3>
+<div class='stats'><div class='stat'><b>25 mm/s</b><span>velocidad del papel</span></div><div class='stat'><b>0,04 s</b><span>1 mm (cuadradito)</span></div><div class='stat'><b>0,20 s</b><span>5 mm (cuadrado grande)</span></div><div class='stat'><b>10 mm/mV</b><span>calibración de voltaje</span></div></div>
+<ul><li><b>Eje horizontal (Tiempo):</b> Velocidad estándar del papel a <b>25 mm/s</b>. Un milímetro (cuadradito pequeño) representa <b>0,04 segundos (40 milisegundos)</b>; cinco milímetros (cuadrado grande) equivalen a <b>0,20 segundos (200 milisegundos)</b>.</li>
+<li><b>Eje vertical (Voltaje):</b> Calibración universal de <b>10 mm/mV</b>. Un milímetro equivale a <b>0,1 mV</b>; dos cuadrados grandes (10 mm) representan <b>1 mV</b>.</li>
+<li><i>Verificación técnica obligatoria:</i> Constatar al inicio del registro la presencia del rectángulo patrón de calibración (10 mm de altura por 5 mm de ancho). Una calibración a 5 mm/mV (medio voltaje) o 20 mm/mV (doble voltaje) induce a falsos diagnósticos de isquemia o hipertrofia.</li></ul>
+<h3>Disposición de derivaciones y planos de exploración</h3>
+<ul><li><b>Plano frontal (extremidades):</b> Derivaciones bipolares estándar (I, II, III) y monopolares aumentadas (aVR, aVL, aVF). Mnemotecnia de conexión por código de colores: brazo derecho (<b>Rojo</b>), brazo izquierdo (<b>Amarillo</b>), pierna izquierda (<b>Verde</b>) y pierna derecha (<b>Negro/Tierra</b>).</li>
+<li><b>Plano horizontal (precordiales estándar V1–V6):</b><ul>
+<li><b>V1:</b> 4.º espacio intercostal (EIC) en la línea paraesternal derecha.</li>
+<li><b>V2:</b> 4.º EIC en la línea paraesternal izquierda.</li>
+<li><b>V3:</b> En el punto medio equidistante entre V2 y V4.</li>
+<li><b>V4:</b> 5.º EIC en la línea medioclavicular izquierda.</li>
+<li><b>V5:</b> 5.º EIC en la línea axilar anterior izquierda (mismo nivel horizontal que V4).</li>
+<li><b>V6:</b> 5.º EIC en la línea axilar media izquierda (mismo nivel horizontal que V4).</li></ul></li>
+<li><b>Derivaciones especiales en cuidados críticos:</b><ul>
+<li><b>Precordiales derechas (V3R–V6R):</b> Espejo en hemitórax derecho de las precordiales estándar; <b>V4R</b> (5.º EIC línea medioclavicular derecha) es obligatoria ante todo infarto agudo de cara inferior para diagnosticar extensión al ventrículo derecho.</li>
+<li><b>Precordiales posteriores (V7–V9):</b> V7 (línea axilar posterior), V8 (línea medioescapular) y V9 (línea paravertebral izquierda) a nivel del 5.º EIC para pesquisar infartos de cara posterior (dorsal).</li></ul></li></ul>
+<h3>2. Algoritmo de los 5 Pasos para la Lectura Sistemática (Dra. Madrazo)</h3>
+<div class='wrap'><table><tr><th>Paso</th><th>Parámetro a Evaluar</th><th>Método / Técnica en UCI</th><th>Criterio de Normalidad</th></tr>
+<tr><td><b>1</b></td><td>Frecuencia Cardíaca (FC)</td><td>• Ritmo regular: Método 300 (300 / n.º cuadros grandes R-R).<br>• Ritmo irregular (ej. FA): Método 6 segundos (complejos QRS en 30 cuadros grandes × 10).</td><td>60 a 100 lpm. (&lt;60 = bradicardia, &gt;100 = taquicardia).</td></tr>
+<tr><td><b>2</b></td><td>Ritmo Cardíaco</td><td>Constatar activación originada en el nodo sinusal.</td><td>• Onda P positiva en II, III y aVF.<br>• Onda P negativa en aVR.<br>• Toda onda P seguida de QRS.<br>• Intervalos R-R regulares.</td></tr>
+<tr><td><b>3</b></td><td>Eje Eléctrico Frontal</td><td>Método de los cuadrantes en derivaciones I y aVF.</td><td>-30° a +90° (QRS neto positivo en I y positivo en aVF).</td></tr>
+<tr><td><b>4</b></td><td>Ondas e Intervalos</td><td>Medición de despolarización y conducción en milisegundos.</td><td>• Onda P: &lt;0,12 s (&lt;120 ms) y &lt;0,25 mV.<br>• Intervalo PR: 0,12 a 0,20 s (120–200 ms).<br>• Complejo QRS: &lt;0,12 s (&lt;120 ms).<br>• Intervalo QTc (Bazett): &lt;440 ms (varón), &lt;460 ms (mujer).</td></tr>
+<tr><td><b>5</b></td><td>Punto J, ST y Onda T</td><td>Análisis de la línea isoeléctrica y repolarización ventricular.</td><td>• Punto J: Nivelado con la línea base TP previa.<br>• Segmento ST: Isoeléctrico (elevación &gt;1 mm en frontal o &gt;2 mm en V2–V3 es patológica).<br>• Onda T: Asimétrica, positiva (salvo aVR y V1).</td></tr></table></div>
+<h3>Variaciones patológicas del eje eléctrico</h3>
+<div class='grid'><div class='box'><b>Desviación a la izquierda (-30° a -90°):</b> QRS positivo en I y negativo en aVF. Etiología: hemibloqueo anterior izquierdo, hipertrofia ventricular izquierda avanzada, IAM inferior antiguo.</div>
+<div class='box'><b>Desviación a la derecha (+90° a +180°):</b> QRS negativo en I y positivo en aVF. Etiología: sobrecarga del ventrículo derecho, tromboembolismo pulmonar (TEP), hemibloqueo posterior izquierdo.</div>
+<div class='box'><b>Desviación extrema / Indeterminado (+180° a -90°):</b> QRS negativo en I y en aVF («eje en tierra de nadie»).</div></div>
+<h3>Prolongación del intervalo QTc y riesgo arrítmico</h3>
+<ul><li>Calculado mediante la fórmula de Bazett: <b>QTc = QT ÷ √RR</b></li>
+<li>Un <b>QTc &gt;500 ms</b> constituye un signo de alarma crítico en UCI por riesgo inminente de degeneración en <b>Torsades de Pointes</b> (taquicardia ventricular polimórfica), asociada a hipopotasemia, hipomagnesemia o fármacos (amiodarona, haloperidol, macrólidos).</li></ul>
+<div class='case'><h3>Caso Clínico Simulado: Módulo I</h3><p><b>Escenario:</b> Varón de 68 años ingresa en la Unidad de Críticos Cardiovasculares en el postoperatorio de cirugía vascular con escalofríos intensos y temblor muscular generalizado. El monitor central activa alarma de «Fibrilación Auricular Rápida con frecuencia de 160 lpm». Al obtener la tira de ritmo se aprecia una línea de base completamente oscilante e irregular que dificulta identificar las ondas.</p><p><b>Razonamiento y resolución:</b></p><ol>
+<li><i>Inspección analítica del trazado:</i> Al analizar simultáneamente derivaciones periféricas con menor masa muscular adyacente (V5 y derivación I), se identifican ondas P sinusales a 72 lpm que conducen con intervalos R-R perfectamente regulares.</li>
+<li><i>Juicio crítico de enfermería:</i> Se trata de un artefacto por <b>temblor somático</b> (contracción de musculatura esquelética) que simula una taquiarritmia auricular.</li>
+<li><i>Intervención inmediata:</i> Calentar activamente al paciente con manta de aire convectivo, asegurar el contacto y adherencia del gel de los electrodos, activar el filtro muscular del electrocardiógrafo (filtro de 35 Hz) y repetir el registro de 12 derivaciones antes de iniciar cualquier fármaco frenador o antiarrítmico.</li></ol></div>
+<h3>Refuerzo Cognitivo: Módulo I</h3>
+<p><b>Regla mnemotécnica del Método 300:</b> Aprende la secuencia decreciente para cada cuadrado grande entre dos ondas R consecutivas:</p><svg viewBox='0 0 600 70' role='img' aria-label='Método 300'><g font-size='15' text-anchor='middle' font-weight='700'><rect x='2' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='48' y='32'>300</text><text x='48' y='54' font-size='11' font-weight='400'>1 cuadro</text><rect x='102' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='148' y='32'>150</text><text x='148' y='54' font-size='11' font-weight='400'>2 cuadros</text><rect x='202' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='248' y='32'>100</text><text x='248' y='54' font-size='11' font-weight='400'>3 cuadros</text><rect x='302' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='348' y='32'>75</text><text x='348' y='54' font-size='11' font-weight='400'>4 cuadros</text><rect x='402' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='448' y='32'>60</text><text x='448' y='54' font-size='11' font-weight='400'>5 cuadros</text><rect x='502' y='5' width='92' height='60' rx='8' fill='var(--t1)' stroke='var(--c1)'/><text x='548' y='32'>50</text><text x='548' y='54' font-size='11' font-weight='400'>6 cuadros</text></g></svg>
+<div class='pearl'><b>Perla clínica:</b> La onda T simétrica, puntiaguda y de gran voltaje (en «tienda de campaña») es el primer signo electrocardiográfico de <b>hiperpotasemia</b> en el paciente crítico, antecediendo al ensanchamiento del QRS y al paro ventricular.</div></section>
+
+<section id='m2'><h2>Módulo II: Hipertensión Arterial en Cuidados Críticos: Crisis, Monitorización y Farmacología</h2>
+<h3>1. Técnica Estandarizada OMS/HEARTS frente a Monitorización Invasiva</h3>
+<p><b>Medición estandarizada no invasiva de la presión arterial (PA):</b> Aplicación del protocolo OMS/HEARTS para evitar sesgos diagnósticos:</p>
+<div class='grid'><div class='box'>Reposo previo mínimo de 5 minutos en ambiente térmico neutro y silencioso.</div>
+<div class='box'>No haber consumido cafeína, nicotina ni fármacos adrenérgicos en los 30 minutos previos.</div>
+<div class='box'>Paciente sentado con espalda apoyada, piernas descruzadas y pies planos sobre el piso. Vejiga urinaria evacuada (una vejiga llena puede elevar la PAS hasta 15 mmHg).</div>
+<div class='box'>Brazo descubierto y apoyado a la altura del corazón. El manguito debe cubrir el 80% de la circunferencia del brazo; un manguito pequeño sobreestima artificialmente la cifra tensional.</div>
+<div class='box'>Guardar silencio absoluto: conversar durante la toma incrementa la PA hasta en 10 mmHg.</div></div>
+<p><b>Monitorización hemodinámica invasiva: Línea Arterial (PAI):</b></p>
+<ul><li>Indicada en inestabilidad hemodinámica, necesidad de gasometrías seriadas y administración de vasoactivos en infusión continua.</li>
+<li><b>Cálculo de la Presión Arterial Media (PAM):</b> Representa la verdadera presión de perfusión tisular durante todo el ciclo cardíaco: <b>PAM = (PAS + 2·PAD) ÷ 3</b></li>
+<li><b>Eje flebostático y calibración:</b> El transductor de presión debe nivelarse con el <b>4.º espacio intercostal en la línea axilar media</b> (referencia anatómica de la aurícula izquierda) y calibrarse a cero a la presión atmosférica al inicio de cada turno o tras cambios posturales.</li>
+<li><b>Test de la onda cuadrada (Dynamic Response Test):</b> Apertura rápida del sistema de lavado presurizado (a 300 mmHg de solución salina con heparina opcional):<ul>
+<li><i>Subamortiguamiento (Underdamped):</i> Múltiples oscilaciones antes de volver a la línea base; sobreestima la PAS y subestima la PAD.</li>
+<li><i>Sobreamortiguamiento (Overdamped):</i> Pérdida de la hendidura dicrota y retorno lento sin oscilaciones; subestima la PAS.</li></ul></li>
+<li><i>Seguridad del catéter:</i> Realización del <b>test de Allen</b> antes de la punción radial para verificar la permeabilidad del arco palmar y vigilancia horaria del relleno capilar y temperatura del miembro.</li></ul>
+<h3>2. Algoritmo Decisional ante Crisis Hipertensiva (PA ≥180/120 mmHg)</h3>
+<div class='wrap'><table><tr><th>Parámetro</th><th>Urgencia Hipertensiva</th><th>Emergencia Hipertensiva</th></tr>
+<tr><td><b>Cifras tensionales</b></td><td>PAS ≥180 mmHg y/o PAD ≥120 mmHg.</td><td>PAS ≥180 mmHg y/o PAD ≥120 mmHg.</td></tr>
+<tr><td><b>Daño agudo de órgano diana</b></td><td>Ausente. Sin compromiso vital inmediato.</td><td>Presente. Lesión aguda en encéfalo, corazón, retina, aorta o riñones.</td></tr>
+<tr><td><b>Ubicación asistencial</b></td><td>Sala de observación / Box de agudos.</td><td>Ingreso inmediato en UCI.</td></tr>
+<tr><td><b>Vía de administración</b></td><td>Vía ORAL (Captopril, Labetalol, Amlodipino).</td><td>Vía INTRAVENOSA continua en bomba de infusión.</td></tr>
+<tr><td><b>Monitorización</b></td><td>No invasiva automatizada seriada.</td><td>Invasiva continua (Línea arterial PAI).</td></tr>
+<tr><td><b>Objetivo hemodinámico</b></td><td>Reducción tensional gradual en 24 a 48 horas.</td><td>Reducción de la PAM de un 20% a 25% en la primera hora (o PAS a 160/100 mmHg en 2–6 horas).</td></tr>
+<tr><td><b>Peligro iatrogénico</b></td><td>Descensos bruscos que inducen isquemia cerebral o miocárdica por fallo de autorregulación.</td><td>Demora terapéutica que expande el daño orgánico irreversible.</td></tr></table></div>
+<div class='warn'><b>La gran excepción terapéutica: Síndrome Aórtico Agudo:</b><ul><li>En la disección aórtica aguda <b>no se aplica</b> la reducción gradual del 25%.</li><li>Se exige un control ultrarrápido en <b>menos de 10 a 20 minutos</b> con metas de <b>PAS entre 90 y 110 mmHg</b> y frecuencia cardíaca <b>&lt;60 lpm</b> mediante betabloqueantes intravenosos (esmolol o labetalol) asociados a vasodilatadores para minimizar la fuerza de cizallamiento (<i>dP/dt</i>).</li></ul></div>
+<h3>3. Farmacología Parenteral en Cuidados Críticos</h3>
+<p><b>Crisis Hipertensiva en UCI</b></p>
+<div class='grid'><div class='box'><b>Emergencia Neurológica (ACV / Encefalopatía)</b><br>→ LABETALOL IV</div><div class='box'><b>Emergencia Coronaria (SCA) o EAP</b><br>→ NITROGLICERINA IV</div><div class='box'><b>Emergencia Hipertensiva Refractaria</b><br>→ NITROPRUSIATO SÓDICO IV (con fotoprotección)</div></div>
+<h3>Labetalol IV</h3>
+<ul><li><i>Mecanismo:</i> Bloqueador competitivo de receptores α₁ periféricos y β₁/β₂ adrenérgicos (proporción 1:7 tras administración intravenosa).</li>
+<li><i>Ventajas:</i> Reduce la resistencia vascular sistémica manteniendo el gasto cardíaco y el flujo sanguíneo cerebral, renal y coronario sin taquicardia refleja.</li>
+<li><i>Dosificación:</i> Bolos lentos de 20 mg en 2 minutos (duplicando cada 10 min hasta un máximo de 300 mg) o perfusión continua de 0,5 a 2 mg/min.</li></ul>
+<h3>Nitroglicerina IV</h3>
+<ul><li><i>Mecanismo:</i> Donador de óxido nítrico que induce vasodilatación venosa de predominio con reducción de la precarga y del consumo de oxígeno miocárdico. A dosis altas (&gt;100 mcg/min) induce vasodilatación arterial.</li>
+<li><i>Indicaciones:</i> Síndrome coronario agudo y edema agudo de pulmón cardiogénico.</li>
+<li><i>Cuidados enfermeros críticos:</i> Exige sistemas de infusión y frascos libres de cloruro de polivinilo (sistemas <b>libres de PVC</b> o de polietileno/vidrio), ya que el fármaco se adsorbe en el plástico convencional provocando pérdida de hasta el 80% de la dosis.</li></ul>
+<h3>Nitroprusiato sódico IV</h3>
+<ul><li><i>Mecanismo:</i> Vasodilatador arteriovenoso directo potente que reduce de forma simultánea la precarga y la postcarga.</li>
+<li><i>Precauciones de enfermería:</i><ul>
+<li><b>Fotoprotección estricta:</b> La molécula se inactiva por la luz ambiente; el frasco y la tubuladura deben recubrirse de material opaco.</li>
+<li><b>Monitorización invasiva obligatoria:</b> Exige línea arterial para evitar hipotensiones catastróficas.</li>
+<li><b>Toxicidad por cianuro y tiocianato:</b> Riesgo elevado en infusiones superiores a 48 horas, dosis &gt;2 mcg/kg/min o presencia de insuficiencia renal o hepática. Se vigila la aparición de acidosis metabólica inexplicable, confusión o deterioro neurológico.</li></ul></li></ul>
+<div class='case'><h3>Caso Clínico Simulado: Módulo II</h3><p><b>Escenario:</b> Mujer de 62 años es trasladada a UCI con déficit motor súbito en extremidades derechas y afasia de 80 minutos de evolución. La TC de cráneo descarta hemorragia (accidente cerebrovascular isquémico agudo con indicación de trombolisis con alteplasa). La línea arterial registra una presión de 212/118 mmHg (PAM 149 mmHg).</p><p><b>Razonamiento y resolución:</b></p><ol>
+<li><i>Criterio de seguridad hemodinámica:</i> Para administrar el activador del plasminógeno tisular (rt-PA) sin inducir una transformación hemorrágica masiva, la presión arterial debe reducirse y mantenerse estrictamente por debajo de <b>185/110 mmHg</b>.</li>
+<li><i>Selección farmacológica de enfermería:</i> Iniciar perfusión continua de <b>labetalol IV</b> mediante bomba de infusión volumétrica, titulando la velocidad de infusión cada 10 minutos.</li>
+<li><i>Vigilancia y límites de seguridad:</i> Evitar reducciones tensionales excesivas (PAM &lt;80 mmHg) que agravarían la isquemia en el área de penumbra cerebral. Realizar valoración neurológica horaria mediante la escala NIHSS.</li></ol></div>
+<h3>Refuerzo Cognitivo: Módulo II</h3>
+<div class='pearl'><b>Perla clínica:</b> Jamás administres nifedipino sublingual de liberación inmediata en una crisis hipertensiva; produce vasodilatación no controlada, taquicardia refleja y colapsos coronarios o cerebrales fulminantes.</div></section>
+
+<section id="m3"><h2>Módulo III · Insuficiencia cardíaca y shock cardiogénico</h2>
+<h3>NT-proBNP en disnea aguda</h3>
+<div class="bar"><span>&lt;300 pg/mL: descarta IC (VPN &gt;98 %)</span><i style="width:17%"></i></div>
+<div class="bar"><span>&lt;50 años: &gt;450</span><i style="width:25%"></i></div>
+<div class="bar"><span>50–75 años: &gt;900</span><i style="width:50%"></i></div>
+<div class="bar"><span>&gt;75 años: &gt;1.800</span><i style="width:100%"></i></div>
+<p>Lo elevan la insuficiencia renal y la FA; lo baja la obesidad severa. En POCUS, VCI &gt;21 mm con colapso inspiratorio &lt;50 % indica presión auricular derecha &gt;15 mmHg.</p>
+<h3>Matriz de Stevenson</h3>
+<p class="sub">Columnas: congestión (seco / húmedo). Filas: perfusión (caliente / frío).</p>
+<div class="st">
+<div class="a"><b>A · Caliente y seco</b><br>Compensado. Ajustar terapia oral.</div>
+<div class="h"><b>B · Caliente y húmedo</b><br>Edema agudo de pulmón: furosemida IV + nitroglicerina.</div>
+<div class="l"><b>L · Frío y seco</b><br>Hipovolemia. Reto de volumen cauto.</div>
+<div class="c"><b>C · Frío y húmedo</b><br>Shock cardiogénico: inotrópico, vasopresor, soporte mecánico.</div></div>
+<h3>Perfil B: edema agudo de pulmón</h3>
+<ul><li>Cabecera a 60–90° con piernas en declive.</li><li>CPAP/VMNI con 8–10 cmH₂O.</li><li>Furosemida IV lenta, máx. 4 mg/min (ototoxicidad). A las 2 h: diuresis &gt;100–150 ml/h o Na urinario &gt;50–70 mEq/L.</li><li>Nitroglicerina si PAS &gt;110 mmHg.</li></ul>
+<h3>Perfil C: clasificación SCAI</h3>
+<div class="lg"><div><b>A</b>En riesgo</div><div><b>B</b>Pre-shock</div><div><b>C</b>Shock clásico</div><div><b>D</b>Refractario</div><div><b>E</b>Extremis / RCP</div></div>
+<p>Hipoperfusión: lactato &gt;2 mmol/L, diuresis &lt;0,5 ml/kg/h, llenado capilar &gt;3 s.</p>
+<div class="grid">
+<div class="box"><b>Noradrenalina</b><br>Primera línea, meta PAM &gt;65. Solo en SG5 %, por vía central.</div>
+<div class="box"><b>Dobutamina</b><br>Inotrópico de elección (β1), 2,5–15 mcg/kg/min.</div>
+<div class="box"><b>Levosimendán</b><br>Sensibilizador al calcio, en SG5 %; efecto &gt;7 días (OR-1896).</div></div>
+<p>Balance positivo &gt;+1.000 ml en 36 h aumenta la mortalidad.</p>
+<div class="case"><h3>Caso: IAM anterior extenso a las 12 h</h3>Varón de 64 años, letárgico, diaforesis fría, livedo en rodillas, diuresis 12 ml/h. PA 74/46 (PAM 55), FC 118, lactato 4,2, SvcO₂ 51 %. <b>Perfil C, SCAI C.</b> Noradrenalina en SG5 % por vía central hasta PAM ≥65, dobutamina, urómetro con diuresis horaria, gasometría cada 2 h para seguir el lactato y preparar balón de contrapulsación o asistencia ventricular.</div>
+<div class="pearl"><b>Mnemotecnia:</b> B = Buena perfusión + Burbujas pulmonares → diuréticos y vasodilatadores. C = Compromiso circulatorio + Congestión → Cardiogénico: inotrópicos y soporte mecánico.</div></section>
+
+<section id="m4"><h2>Módulo IV · Síndrome coronario agudo</h2>
+<div class="grid">
+<div class="box"><b>SCACEST</b><br>Oclusión total. ST elevado &gt;20 min en ≥2 derivaciones contiguas, o BCRI nuevo con sospecha clínica.</div>
+<div class="box"><b>IAMSEST</b><br>Oclusión parcial con troponina ultrasensible sobre el percentil 99.</div>
+<div class="box"><b>Angina inestable</b><br>Dolor isquémico en reposo, de inicio reciente o in crescendo, troponinas negativas.</div></div>
+<p><b>Dolor típico:</b> opresión precordial no modificada por respiración ni palpación, signo de Levine (puño en el esternón), irradiación a cuello, mandíbula o brazo izquierdo, diaforesis. <b>Equivalentes anginosos</b> en ancianos, mujeres y diabéticos: disnea súbita, fatiga extrema o síncope.</p>
+<h3>Algoritmo de reperfusión</h3>
+<svg viewBox="0 0 620 300" role="img" aria-label="Algoritmo de reperfusión en SCACEST">
+<g font-size="13" text-anchor="middle"><rect x="190" y="5" width="240" height="40" rx="8" fill="var(--t4)" stroke="var(--c4)"/><text x="310" y="30" font-weight="700">Sospecha de SCACEST</text>
+<line x1="310" y1="45" x2="310" y2="65" stroke="var(--c4)" stroke-width="2"/>
+<rect x="190" y="65" width="240" height="40" rx="8" fill="var(--t4)" stroke="var(--c4)"/><text x="310" y="90">ECG de 12 derivaciones ≤10 min</text>
+<line x1="310" y1="105" x2="310" y2="125" stroke="var(--c4)" stroke-width="2"/>
+<rect x="170" y="125" width="280" height="40" rx="8" fill="var(--t4)" stroke="var(--c4)"/><text x="310" y="150">¿ICP posible en ≤120 min?</text>
+<line x1="230" y1="165" x2="120" y2="195" stroke="var(--c4)" stroke-width="2"/><line x1="390" y1="165" x2="500" y2="195" stroke="var(--c4)" stroke-width="2"/>
+<text x="150" y="182" font-weight="700">SÍ</text><text x="470" y="182" font-weight="700">NO</text>
+<rect x="10" y="195" width="220" height="95" rx="8" fill="var(--t1)" stroke="var(--c1)"/><text x="120" y="218" font-weight="700">ICP primaria</text><text x="120" y="242">Puerta-balón ≤60 min</text><text x="120" y="262">en centro con sala 24 h</text>
+<rect x="390" y="195" width="220" height="95" rx="8" fill="var(--t2)" stroke="var(--c2)"/><text x="500" y="218" font-weight="700">Fibrinólisis</text><text x="500" y="242">Puerta-aguja ≤10 min</text><text x="500" y="262">Sin respuesta a 60–90 min</text><text x="500" y="280">→ ICP de rescate</text></g></svg>
+<p>Contraindicaciones absolutas de fibrinólisis: hemorragia intracraneal previa, ACV isquémico en 6 meses, sangrado digestivo activo, disección aórtica. Criterio de reperfusión: ST resuelto &gt;50 % y dolor cedido.</p>
+<div class="wrap"><table><tr><th>Antitrombótico</th><th>Dosis</th></tr>
+<tr><td>AAS masticado</td><td>150–300 mg</td></tr>
+<tr><td>Ticagrelor / Prasugrel</td><td>Carga 180 mg / 60 mg</td></tr>
+<tr><td>Clopidogrel</td><td>300–600 mg, si los anteriores están contraindicados</td></tr>
+<tr><td>Heparina no fraccionada</td><td>Bolo 70–100 UI/kg, control de TTPa (o enoxaparina)</td></tr></table></div>
+<h3>Infarto del ventrículo derecho</h3>
+<p>Hasta 30–50 % de los infartos inferiores (oclusión proximal de la coronaria derecha).</p>
+<div class="lg"><div><b>1</b>Hipotensión</div><div><b>2</b>Yugulares ingurgitadas</div><div><b>3</b>Pulmones limpios</div><div><b>V4R</b>ST ≥1 mm</div></div>
+<div class="warn"><b>Prohibidos:</b> nitroglicerina, vasodilatadores arteriales, morfina y diuréticos. El VD isquémico depende de la precarga. <b>Tratar con:</b> cristaloides 200–300 ml en 15–20 min (PVC meta 10–14 mmHg) y traslado urgente para reperfusión.</div>
+<div class="case"><h3>Caso: ST elevado en II, III y aVF</h3>Varón de 57 años, PA 86/48, FC 54, pulmones limpios, yugulares ingurgitadas. Colocar V3R y V4R (ST +1,5 mm en V4R), suspender nitroglicerina y morfina, dos vías de 14–16 G con carga de cristaloides, AAS 300 mg + ticagrelor 180 mg y traslado a hemodinamia para ICP de la coronaria derecha.</div>
+<div class="pearl"><b>Perla:</b> en todo infarto inferior, tras el ECG de 12 derivaciones, el primer acto de enfermería es registrar V3R y V4R, antes de cualquier fármaco que altere la precarga.</div></section>
+<h2 class='part'>Parte 2 · Temas 20 al 30 (segundo manual)</h2>
+<section id='m5'><h2>Módulo V · SCA, intervencionismo estructural y cirugía cardiovascular</h2>
+<h3>Tema 20 · Síndrome coronario agudo</h3>
+<div class='grid'><div class='box'><b>SCACEST</b><br>Oclusión total o subtotal. ST elevado &gt;20 min en ≥2 derivaciones contiguas. ICP primaria &lt;120 min desde el primer contacto médico; fibrinólisis si se excede la ventana.</div><div class='box'><b>SCASEST</b><br>Oclusión incompleta: ST descendido, T invertida o angina inestable. Coronariografía: &lt;2 h (riesgo muy alto), &lt;24 h (temprana) o selectiva.</div></div>
+<h3>Complicaciones mecánicas (mortalidad extrema)</h3>
+<div class='wrap'><table><tr><th>Complicación</th><th>Claves</th><th>Cuadro</th></tr>
+<tr><td><b>Rotura de pared libre del VI</b></td><td>~1 %. &gt;65 años, mujer, primer IAM anterior, sin hipertrofia</td><td>Hemopericardio, taponamiento, colapso súbito</td></tr>
+<tr><td><b>Rotura septal (CIV aguda)</b></td><td>Shunt izquierda-derecha; bloqueo de rama en 40 %</td><td>Disnea brusca, soplo holosistólico nuevo, shock</td></tr>
+<tr><td><b>Insuficiencia mitral aguda</b></td><td>Rotura de músculo papilar; frecuente en IAM inferior (irrigación única de la descendente posterior)</td><td>Edema agudo de pulmón súbito y shock</td></tr></table></div>
+<ul><li>Monitoreo continuo: ECG de 12 derivaciones con análisis de ST, TA, PVC, gasto cardíaco y pulsioximetría.</li><li>Oxígeno solo ante hipoxemia (SatO₂ &lt;90 %), control del dolor, valoración neurológica; tener listos inotrópicos, volumen o pericardiocentesis/cirugía urgente.</li></ul>
+<h3>Tema 21 · Post-intervencionismo estructural</h3>
+<p>Procedimientos percutáneos: <b>TAVI</b> (válvula aórtica), <b>MitraClip</b> (reparación mitral borde a borde), <b>COI</b> (cierre de orejuela izquierda) y cierre de <b>CIA</b>.</p>
+<div class='wrap'><table><tr><th>Complicación</th><th>Reconocer</th><th>Actuar / prevenir</th></tr>
+<tr><td><b>Hemorragia de la vía de acceso</b></td><td>Falla del dispositivo de cierre</td><td>Compresión bimanual directa</td></tr>
+<tr><td><b>Pseudoaneurisma</b></td><td>Hematoma pulsátil conectado a la arteria, soplo sistólico, dolor</td><td>Doppler; sellado endovascular o trombina</td></tr>
+<tr><td><b>Fístula arteriovenosa</b></td><td>Soplo continuo en la ingle</td><td>Eco Doppler, avisar a hemodinamia</td></tr>
+<tr><td><b>Contraste yodado</b></td><td>Nefropatía; encefalopatía (déficit reversible en 24–72 h)</td><td>Hiperhidratación profiláctica</td></tr>
+<tr><td><b>Intracardíacas</b></td><td>Perforación con taponamiento (guías, punción transeptal); leak paravalvular en TAVI</td><td>Eco urgente, vigilar hemodinamia</td></tr></table></div>
+<h3>Tema 22 · Postoperatorio inmediato de cirugía cardiovascular</h3>
+<div class='grid'><div class='box'><b>CEC</b><br>Respuesta inflamatoria sistémica por circulación extracorpórea, hemodilución, hipotermia y heparinización masiva.</div><div class='box'><b>Drenajes</b><br>Débito horario de tubos mediastínicos y pleurales.</div><div class='box'><b>Coagulopatía</b><br>Protamina (antagoniza heparina), ácido tranexámico o aminocaproico, hemocomponentes según tromboelastometría.</div><div class='box'><b>Digestivo y sedación</b><br>Vigilar peristaltismo, prevenir íleo, SNG para descomprimir, analgosedación adaptada al destete.</div></div>
+<div class='warn'><b>Taponamiento postquirúrgico:</b> el débito cae de golpe tras sangrado masivo, con hipotensión lábil, taquicardia, yugulares ingurgitadas y PVC alta. Indicación de reesternotomía urgente a pie de cama.</div>
+<div class='case'><h3>Caso: dolor inguinal 2 h después de TAVI</h3>Varón de 68 años, TAVI transfemoral derecha. PA 82/45, FC 118, palidez, dolor punzante en fosa ilíaca derecha y masa pulsátil dura en la ingle. <b>Sospecha:</b> hematoma retroperitoneal o pseudoaneurisma por falla del cierre. <b>Acción:</b> (1) compresión bimanual 1–2 cm sobre la punción, (2) suspender anticoagulantes y antiagregantes, (3) cristaloides para mantener PAS &gt;90, (4) pruebas cruzadas y angio-TC o Doppler, (5) avisar a hemodinamia para balón o trombina.</div>
+<div class='pearl'><b>Perla:</b> el sangrado exteriorizado es falla de cicatrización hacia afuera. El pseudoaneurisma es una cavidad contenida por tejido blando, comunicada con la arteria, con flujo turbulento y riesgo de expansión.</div></section>
+
+<section id='m6'><h2>Módulo VI · Síndrome aórtico agudo y taponamiento cardíaco</h2>
+<h3>Tema 23 · Síndrome aórtico agudo (SAA)</h3>
+<div class='bar'><span>Disección aórtica 80 %</span><i style='width:80%'></i></div><div class='bar'><span>Hematoma intramural 15 %</span><i style='width:15%'></i></div><div class='bar'><span>Úlcera penetrante 5 %</span><i style='width:5%'></i></div>
+<ul><li><b>Disección:</b> desgarro de la íntima, falsa luz en la media.</li><li><b>Hematoma intramural:</b> sangrado de los vasa vasorum sin desgarro visible.</li><li><b>Úlcera aterosclerótica penetrante:</b> placa que perfora la lámina elástica interna.</li></ul>
+<div class='grid'><div class='box'><b>Stanford A · aorta Ascendente</b><br>Emergencia quirúrgica absoluta (cirugía Abierta). La mortalidad sube 1–2 % por hora de retraso en las primeras 48 h.</div><div class='box'><b>Stanford B · aorta descendente (Baja)</b><br>Distal a la subclavia izquierda. Tratamiento médico con betabloqueante; TEVAR si hay malperfusión visceral, dolor persistente o expansión.</div></div>
+<div class='warn'><b>Anti-impulso (dP/dt):</b> PAS 90–110 mmHg y FC &lt;60 lpm con esmolol o labetalol IV en perfusión; vasodilatador (nitroprusiato) solo después del betabloqueante; opiáceos de acción rápida. Vigilar diuresis (sonda vesical), simetría de pulsos y neurología de miembros inferiores.</div>
+<h3>Tema 24 · Taponamiento cardíaco</h3>
+<p>La presión intrapericárdica supera la diastólica ventricular: se comprometen las cavidades derechas, cae el volumen sistólico y aparece shock obstructivo.</p>
+<div class='lg'><div><b>1</b>Hipotensión severa</div><div><b>2</b>Ruidos apagados</div><div><b>3</b>Yugulares ingurgitadas</div><div><b>&gt;10</b>mmHg: caída inspiratoria de PAS (pulso paradójico)</div></div>
+<ul><li><b>Rescate:</b> pericardiocentesis ecoguiada o drenaje quirúrgico.</li><li><b>Enfermería:</b> ECG continuo (ST elevado o extrasístoles ventriculares por contacto epicárdico), reposición agresiva de volumen antes del procedimiento y apoyo inotrópico.</li></ul>
+<div class='case'><h3>Caso: Stanford B que empeora al 3.er día</h3>Mujer de 59 años con labetalol IV. Dolor lumbar desgarrante, paraparesia, anuria de 2 h, miembros inferiores fríos y sin pulsos femorales. <b>Juicio:</b> progresión de la disección con oclusión de arterias renales e ilíacas. <b>Acción:</b> alertar a cirugía vascular/hemodinamia (TEVAR de emergencia), laboratorio urgente (lactato, función renal, gasometría), dos vías de gran calibre, evitar Valsalva y ajustar analgosedación.</div>
+<div class='pearl'><b>Mnemotecnia:</b> Stanford <b>A</b> = Ascendente → Abierto, cirugía urgente. Stanford <b>B</b> = Baja (descendente) → Betabloqueante.</div></section>
+
+<section id='m7'><h2>Módulo VII · Arritmias, soporte eléctrico y electrofisiología</h2>
+<h3>Tema 25 · Taquiarritmias (FC &gt;100 lpm)</h3>
+<div class='grid'><div class='box'><b>QRS estrecho (&lt;120 ms)</b><br>Supraventriculares: taquicardia sinusal, FA, flutter, reentrada nodal, vías accesorias (WPW).</div><div class='box'><b>QRS ancho (&gt;120 ms)</b><br>Ventriculares: TV sostenida o no sostenida y FV. Emergencias de alto riesgo.</div></div>
+<div class='warn'><b>Banderas rojas:</b> hipotensión severa · dolor torácico isquémico · alteración aguda de conciencia · insuficiencia cardíaca aguda. Con cualquiera: <b>cardioversión sincronizada inmediata</b> con analgosedación previa.</div>
+<h3>Tema 26 · Desfibrilación vs. cardioversión</h3>
+<div class='wrap'><table><tr><th></th><th>Desfibrilación (DF)</th><th>Cardioversión (CVE)</th><th>Marcapasos transvenoso</th></tr>
+<tr><td><b>Sincronización</b></td><td>Desactivada (asincrónica)</td><td>Activada en la onda R</td><td>Demanda / sincrónico</td></tr>
+<tr><td><b>Indicación</b></td><td>Paro: FV y TV sin pulso</td><td>FA, flutter, TSV, TV con pulso inestables</td><td>BAV sintomático, asistolia</td></tr>
+<tr><td><b>Cuidados</b></td><td>150–200 J bifásico; minimizar pausas en RCP</td><td>Analgosedación; verificar marcas sobre R</td><td>Salida al doble del umbral; inmovilizar</td></tr></table></div>
+<p>La sincronización evita descargar sobre la onda T (fenómeno R sobre T → FV).</p>
+<div class='stats'><div class='stat'><b>150–200 J</b><span>FA (escalonado)</span></div><div class='stat'><b>50–100 J</b><span>flutter / TSV</span></div><div class='stat'><b>120–150 J</b><span>TV monomórfica con pulso</span></div><div class='stat'><b>150–200 J</b><span>desfibrilación FV/TVSP</span></div></div>
+<h3>Tema 27 · Bradiarritmias (FC &lt;60 lpm con repercusión)</h3>
+<p>Disfunción sinusal: bradicardia severa, pausas, bloqueo sinoauricular, síndrome bradi-taqui.</p>
+<div class='wrap'><table><tr><th>Bloqueo AV</th><th>Qué se ve</th></tr>
+<tr><td><b>1.er grado</b></td><td>PR &gt;0,20 s constante; todas las P conducen</td></tr>
+<tr><td><b>2.º Mobitz I (Wenckebach)</b></td><td>PR se alarga hasta que una P no conduce</td></tr>
+<tr><td><b>2.º Mobitz II</b></td><td>PR constante con fallo súbito de conducción; alto riesgo de bloqueo completo</td></tr>
+<tr><td><b>2.º 2:1</b></td><td>Dos P por cada QRS conducido</td></tr>
+<tr><td><b>3.er grado (completo)</b></td><td>Disociación AV: PP y RR regulares, PR totalmente variable</td></tr></table></div>
+<div class='box'><b>Rescate:</b> atropina IV 0,5–1 mg en bolos (máx. 3 mg). Sin respuesta: perfusión de adrenalina, dopamina o isoproterenol.</div>
+<h3>Tema 28 · Marcapasos temporal</h3>
+<div class='grid'><div class='box'><b>Transcutáneo (MTC)</b><br>No invasivo, de emergencia, con parches multifunción. Requiere analgosedación por el dolor de la contracción muscular.</div><div class='box'><b>Transvenoso (MTT)</b><br>Catéter endocárdico por yugular, subclavia o femoral, con electrodo en el ápex del VD.</div></div>
+<div class='lg'><div><b>70–80</b>lpm frecuencia base</div><div><b>mV</b>sensibilidad (sensing)</div><div><b>mA</b>salida (output)</div><div><b>×2</b>salida = 2 × umbral de captura</div></div>
+<p><b>Complicaciones:</b> neumotórax, perforación de VD con taponamiento, falla de captura o sensado por microdesplazamiento, bacteriemia.</p>
+<h3>Tema 29 · Post-ablación en electrofisiología</h3>
+<ul><li>Reposo supino 8–12 h sin flexionar la extremidad; vigilar hematomas externos o retroperitoneales.</li><li>Derrame o taponamiento pericárdico en 2–3 % (punción transeptal o manipulación del ápex).</li><li><b>Tardía, alto riesgo:</b> fístula aurículo-esofágica (fiebre, odinofagia, focalidad neurológica a las 2–4 semanas de una ablación de venas pulmonares).</li></ul>
+<div class='case'><h3>Caso: espículas sin QRS</h3>Paciente de 74 años, IAM inferior con BAV completo (FC 32, PA 75/40), MTT por yugular derecha. A las 4 h pierde el conocimiento: espículas a 70 lpm sin QRS posterior = <b>falla de captura ventricular</b> (umbral elevado por edema o isquemia, desplazamiento del cable o falla de fuente). <b>Acción:</b> subir la salida (mA) al máximo, decúbito lateral izquierdo, revisar conexiones, activar marcapasos transcutáneo si persiste la asistolia y avisar para recolocación fluoroscópica.</div></section>
+
+<section id='m8'><h2>Módulo VIII · Insuficiencia cardíaca aguda y shock cardiogénico</h2>
+<h3>Tema 30</h3>
+<p>La caída de perfusión activa el SNS y el SRAA, sube la resistencia vascular y la sobrecarga hídrica; los péptidos natriuréticos (BNP/NT-proBNP) lo compensan solo en parte.</p>
+<div class='grid'><div class='box'><b>Edema agudo de pulmón</b><br>Fallo retrógrado del VI: disnea severa, ortopnea, taquipnea, crepitantes difusos, expectoración rosada espumosa.</div><div class='box'><b>Shock cardiogénico</b><br>Falla de bomba con hipoperfusión refractaria a volumen: PAS &lt;90, diuresis &lt;0,5 ml/kg/h, hiperlactatemia, alteración neurológica.</div></div>
+<div class='wrap'><table><tr><th>Grupo</th><th>Fármaco / dispositivo</th><th>Nota</th></tr>
+<tr><td><b>Inotrópicos</b></td><td>Dobutamina (β1, de elección) + noradrenalina si hay vasoplejía o hipotensión; levosimendán</td><td>Levosimendán no eleva el consumo de O₂ miocárdico</td></tr>
+<tr><td><b>Vasodilatadores</b></td><td>Nitroglicerina (baja precarga); nitroprusiato (baja postcarga)</td><td>Solo con TAM &gt;70 mmHg</td></tr>
+<tr><td><b>Asistencia mecánica</b></td><td>BCPIA, Impella, ECMO veno-arterial</td><td>Cuando fallan los fármacos</td></tr></table></div>
+<p><b>Enfermería:</b> Fowler alto (90°), CPAP/BiPAP precoz, furosemida IV en bolo, sonda vesical y línea arterial.</p>
+<div class='case'><h3>Caso: EAP hipertensivo</h3>Mujer de 72 años: disnea asfixiante, FR 38, SatO₂ 82 %, PA 185/105, FC 125, esputo rosado espumoso, crepitantes bilaterales. <b>Diagnóstico:</b> EAP cardiogénico hipertenso. <b>Acción:</b> cabecera a 90° con piernas en declive, CPAP 8–10 cmH₂O, furosemida IV más nitroglicerina titulada, sonda vesical para diuresis horaria.</div>
+<div class='pearl'><b>Perla:</b> la dobutamina y los vasopresores pierden eficacia con acidemia e hipoxemia severa. Corregir el intercambio gaseoso y el pH con ventilación no invasiva es la prioridad antes de esperar respuesta farmacológica.</div></section>
+
+<section id="glos"><h2>Glosario terminológico</h2><dl>
+<div><dt>Accidente de placa</dt><dd>Rotura, fisura o erosión de la cápsula fibrosa de un ateroma coronario; expone sustancias trombogénicas e inicia la coagulación.</dd></div>
+<div><dt>Amortiguamiento (damping)</dt><dd>Distorsión de la onda de presión en la línea arterial por burbujas, coágulos o tubuladuras compliantes: sub o sobreamortiguamiento.</dd></div>
+<div><dt>Angina inestable</dt><dd>SCA sin necrosis detectable (troponinas negativas); dolor en reposo, reciente o acelerado.</dd></div>
+<div><dt>Calibración a cero</dt><dd>Ajuste del transductor a la presión atmosférica en el eje flebostático para fijar la referencia basal.</dd></div>
+<div><dt>CPAP</dt><dd>Ventilación no invasiva con presión supraatmosférica durante todo el ciclo; mejora la oxigenación y reduce el retorno venoso.</dd></div>
+<div><dt>Derivaciones precordiales derechas (V3R–V6R)</dt><dd>Electrodos en el hemitórax derecho para diagnosticar isquemia del ventrículo derecho.</dd></div>
+<div><dt>Doble antiagregación (DAPT)</dt><dd>AAS más un inhibidor P2Y12 (ticagrelor, prasugrel o clopidogrel).</dd></div>
+<div><dt>Eje flebostático</dt><dd>Cruce del 4.º EIC con la línea axilar media; representa el nivel de la aurícula izquierda.</dd></div>
+<div><dt>Emergencia hipertensiva</dt><dd>PAS ≥180 o PAD ≥120 mmHg con daño agudo de órgano diana; requiere tratamiento IV inmediato en UCI.</dd></div>
+<div><dt>Equivalente anginoso</dt><dd>Síntoma isquémico distinto al dolor torácico (disnea aguda, síncope, fatiga extrema); frecuente en mujeres, ancianos y diabéticos.</dd></div>
+<div><dt>Fórmula de Bazett</dt><dd>QTc = QT ÷ √RR; corrige el intervalo QT por la frecuencia cardíaca.</dd></div>
+<div><dt>Hendidura dicrota</dt><dd>Muesca en la rama descendente de la curva arterial; marca el cierre de la válvula aórtica.</dd></div>
+<div><dt>IAMSEST</dt><dd>SCA con oclusión subtotal y daño miocárdico confirmado por elevación de troponinas.</dd></div>
+<div><dt>Intervalo PR</dt><dd>Del inicio de la onda P al inicio del QRS; conducción auriculoventricular (0,12–0,20 s).</dd></div>
+<div><dt>ICP primaria</dt><dd>Recanalización urgente de la arteria ocluida por cateterismo, con stent, sin fibrinolíticos previos.</dd></div>
+<div><dt>Línea isoeléctrica</dt><dd>Segmento TP: reposo eléctrico entre el final de la T y la siguiente P; referencia para medir el ST.</dd></div>
+<div><dt>NT-proBNP</dt><dd>Fracción N-terminal del propéptido natriurético B; marcador de distensión ventricular con alto valor predictivo negativo.</dd></div>
+<div><dt>Presión arterial media (PAM)</dt><dd>Presión de perfusión tisular promedio: (PAS + 2·PAD) ÷ 3.</dd></div>
+<div><dt>Punto J</dt><dd>Unión entre el final del QRS y el inicio del segmento ST.</dd></div>
+<div><dt>Puntos de corte de reperfusión</dt><dd>Puerta-balón ≤60 min, puerta-aguja ≤10 min, diagnóstico a ICP ≤120 min.</dd></div>
+<div><dt>R sobre T</dt><dd>Estímulo o despolarización ectópica en la fase vulnerable de la T; puede inducir fibrilación ventricular.</dd></div>
+<div><dt>Signo de Levine</dt><dd>El paciente señala el dolor con el puño cerrado sobre el esternón.</dd></div>
+<div><dt>Sistema libre de PVC</dt><dd>Equipos de polietileno o polietileno/poliuretano que evitan la adsorción de fármacos como la nitroglicerina.</dd></div>
+<div><dt>Temblor somático</dt><dd>Artefacto por contracción muscular que deforma la línea base e imita taquiarritmias auriculares.</dd></div>
+<div><dt>Test de Allen</dt><dd>Valora la permeabilidad del arco palmar y la arteria cubital antes de canalizar la radial.</dd></div>
+<div><dt>Test de la onda cuadrada</dt><dd>Descarga rápida del lavado para evaluar frecuencia natural y amortiguamiento del sistema.</dd></div>
+<div><dt>Tiempo puerta-aguja</dt><dd>Del ingreso al inicio del fibrinolítico (meta ≤10 min).</dd></div>
+<div><dt>Tiempo puerta-balón</dt><dd>Del ingreso a la apertura de la arteria con balón (meta ≤60 min).</dd></div>
+<div><dt>Torsades de Pointes</dt><dd>Taquicardia ventricular polimórfica con QRS que ondula sobre la línea base; asociada a QTc prolongado.</dd></div>
+<div><dt>Urgencia hipertensiva</dt><dd>PA ≥180/120 mmHg sin disfunción aguda de órganos; se trata por vía oral en 24–48 h.</dd></div>
+<div><dt>VCI en POCUS</dt><dd>Calibre y colapsabilidad de la vena cava inferior para estimar la presión de la aurícula derecha.</dd></div>
+<div><dt>Ablación con catéter</dt><dd>Radiofrecuencia o crioablación que genera una lesión localizada para aislar focos ectópicos o circuitos de reentrada.</dd></div>
+<div><dt>Balón de contrapulsación (BCPIA)</dt><dd>Balón en aorta descendente: se infla en diástole (perfusión coronaria) y se desinfla en sístole (menor postcarga).</dd></div>
+<div><dt>Cardioversión eléctrica (CVE)</dt><dd>Descarga sincronizada con la onda R para revertir taquiarritmias con pulso.</dd></div>
+<div><dt>Circulación extracorpórea (CEC)</dt><dd>Circuito que sustituye temporalmente la bomba cardíaca y el intercambio pulmonar en cirugía a corazón abierto.</dd></div>
+<div><dt>Desfibrilación (DF)</dt><dd>Descarga bifásica asincrónica, solo en paro por FV o TV sin pulso.</dd></div>
+<div><dt>Disección aórtica</dt><dd>Desgarro de la íntima que diseca la media y crea una falsa luz paralela a la verdadera.</dd></div>
+<div><dt>Edema agudo de pulmón (EAP)</dt><dd>Insuficiencia respiratoria por trasudado capilar alveolar masivo al subir las presiones de llenado del VI.</dd></div>
+<div><dt>Encefalopatía por contraste</dt><dd>Cuadro neurotóxico transitorio (24–72 h) tras contraste yodado.</dd></div>
+<div><dt>Fístula arteriovenosa</dt><dd>Comunicación anómala arteria-vena tras punciones complejas; soplo o frémito continuo.</dd></div>
+<div><dt>Intervencionismo estructural (IE)</dt><dd>Corrección percutánea de defectos valvulares, septales o de cavidades (TAVI, MitraClip, COI).</dd></div>
+<div><dt>Leak paravalvular</dt><dd>Regurgitación periprotésica por aposición incompleta o calcificación anular.</dd></div>
+<div><dt>Marcapasos transcutáneo (MTC)</dt><dd>Estimulación temporal no invasiva con electrodos cutáneos de gran superficie.</dd></div>
+<div><dt>Marcapasos transvenoso temporal (MTT)</dt><dd>Cable endocárdico en el VD conectado a un generador externo.</dd></div>
+<div><dt>Pseudoaneurisma</dt><dd>Hematoma pulsátil extravascular contenido por tejidos blandos y conectado con la luz arterial.</dd></div>
+<div><dt>Pulso paradójico</dt><dd>Caída inspiratoria de la PAS &gt;10 mmHg en ventilación espontánea; signo de taponamiento.</dd></div>
+<div><dt>Reperfusión miocárdica</dt><dd>Apertura urgente de la arteria del infarto (ICP o fibrinólisis) para limitar la necrosis.</dd></div>
+<div><dt>Shock cardiogénico</dt><dd>Hipoperfusión sistémica por falla primaria del miocardio como bomba.</dd></div>
+<div><dt>Taponamiento cardíaco</dt><dd>Presión pericárdica elevada que impide el llenado ventricular diastólico.</dd></div>
+<div><dt>Tríada de Beck</dt><dd>Hipotensión, tonos cardíacos hipofonéticos e ingurgitación yugular.</dd></div>
+<div><dt>Umbral de captura</dt><dd>Mínima salida (mA) que despolariza el miocardio de forma constante.</dd></div>
+</dl></section>
+<footer>Material de estudio; verificar dosis con protocolos vigentes de la institución.</footer>
+</main></body></html>

@@ -1,0 +1,6 @@
+{
+  "name": "Cuidados Críticos Cardiovasculares",
+  "description": "Guía de estudio interactiva de Cuidados Críticos Cardiovasculares basada en las ponencias de la Dra. Alicia Carolina Madrazo Garcete y el Ciclo de Kolb, con calculadoras UCI, autoevaluación y glosario terminológico.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
